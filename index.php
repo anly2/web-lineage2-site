@@ -10,24 +10,30 @@ if(isset($_REQUEST['connect'])){
 <h3>How to play on L2 Blackstar</h3>
 
 <ol>
-   <li>You will need Lineage 2 - Gracia Epiloge installed.<br />
-       If you still don\'t have you can download it from <a><b>here</b></a> and install.<br />
-       (You might need to run the official updater (<i>Your_Lineage2_Folder</i>/Lineage2.exe))
-   <li>Download our system folder.
+   <li>You will need Lineage 2 - Freya installed.</li>
+   <br />
+       If you still don't have it you can download it from <a><b>here</b></a> and install.<br />
+       <small><i>You might need to run the official updater (<i>Your_Lineage2_Folder</i>/Lineage2.exe)</i></small>
+
+   <br /><br /><br />
+
+   <li>Download our system folder.</li>
    <br />
       <dd><a><b>mirror1</b></a> <a><b>mirror2</b></a></dd>
-      <i>If you don\'t want to lose any of your screenshots/data, rename your current system folder (eg. to "system1") and place our\'s in its place.</i>
+      <small><i>If you don't want to lose any of your screenshots/data, rename your current system folder (eg. to "system1") and place our's in <u>its place</u>.</i></small>
 </ol>
 
- &nbsp;&nbsp;&nbsp; Your Lineage2 Client is now ready, but you\'ll need to open an account.
-<ol>
-<li>Register on our site, AFTER reading the <a>Server Rules</a>.
-    This will be your Forum Account <b><u>and</u></b> Game Account
+ <br /><br />
+ &nbsp;&nbsp;&nbsp; Your Lineage2 Client is now ready, but you'll need to open an account.
+ <br /><br />
+
+<ol start="3">
+<li>Game Account registering is automated but you'll need to register an account on the forums</li>
 </ol>
 <br />
-Have fun and don\'t cheat !!!!!
+Have fun and don't cheat !!!!!
 <br /><br /><br />
-L2Blackstar administration
+<i>L2Blackstar administration</i>
 EOT;
 }
 else
@@ -78,10 +84,9 @@ Be sure to include the player's name that is disobeying the rules and any releva
 <br>
 <ol>
    <li>This is L2 PvP server.
-   <li>PK on your own risk.
-   <li>Overbuffing NOT allowed.
-   <li>GMs do NOT police non-peace zones.
-   <li>You are in a combat zone as soon as you leave a spawn area of the map.
+   <li>PK sucks.
+   <li>Overbuffing sucks.
+   <li>GMs cennot police all zones...
 </ol>
 
 <br><br><br>
@@ -95,7 +100,8 @@ echo <<<EOT
 <h3>Vote for us</h3>
 <br /></br />
 
-<a>RageZone</a> &nbsp; <a>Top MMO</a>
+Page will be updated soon.<br />
+<b>Thank you for the attempt!</b>
 EOT;
 }
 else
@@ -131,12 +137,12 @@ if(isset($_REQUEST['castles'])){
    echo '<div align="center">'."\n";
 
    foreach($castle as $castle_info){
-      echo '<table style="border: 1px solid #FEF3E2;">'."\n";
+      echo '<table style="border-top: 1px solid #808c96;">'."\n";
       echo '   <tr>'."\n";
       echo '      <td>'."\n";
       echo '         <img src="images/castles/'.strtolower($castle_info['name']).'.jpg" alt="'.$castle_info['name'].'" width="150" height="100" />'."\n";
       echo '      </td>'."\n";
-      echo '      <td align="left">'."\n";
+      echo '      <td align="left" style="padding:20px">'."\n";
       echo '            <table>'."\n";
       echo '               <tr>'."\n";
       echo '                  <td align="left"><strong>Castle Name:</strong></td>'."\n";
@@ -214,53 +220,218 @@ if(isset($_REQUEST['raids'])){
 else
 
 if(isset($_REQUEST['info'])){
-   echo <<<EOT
+   $ana = <<<EOT
 <h3>Server Info</h3>
 
 <strong>Server Rates</strong>
-<br />
-42x xp<br />
-25x sp<br />
-2x  party<br />
-14x Spoil<br />
-200x Adena<br />
-5x Quest droprate<br />
+<ul>
+   20x xp<br />
+   25x sp<br />
+   2x  party<br />
+   14x Spoil<br />
+   200x Adena<br />
+   5x Quest droprate<br />
+</ul>
 
-<br /><br />
+<br />
 
-<strong>Server Features</strong>
+<strong><big>Server Features</big></strong>
+<ul>
+   Leveling and Gearing is hard (like in a Low Rate Server) <br />
+   <big>On parallel,</big> in every event your character is temporally boosted<br />
+
+   <br />
+
+   In events you <b>start with</b>:
+   <ul>
+      <li>Max level (85)</li>
+      <li>S80 Armors</li>
+      <li>S80 Weapons</li>
+      <li>all skills learned</li>
+   </ul>
+
+   <br />
+
+   You can earn (event rewards):
+   <ul>
+      <li>enchanted gear for inside the events</li>
+      <li>enchanted skills for inside the events</li>
+      <li>starting potions for each event</li>
+      <li>and more</li>
+   </ul>
+
+   <br />
+
+   <i>Note:</i> The Event version of your character gets a seperate skill bar.<br />
+
+   <br />
+
+   To Ease the pain and annoyance of crafting:<br />
+   <ul>
+      <li>Craft Chance is 100% (no chance for failure)</li>
+      <li>Foundation Craft Chance - 20%</li>
+      <li>Double Craft Chance - 20% (you get double the result items)</li>
+   </ul>
+</ul>
+
 <br />
-Auto learn Skills<br />
-81 and 83 skills no auto learn (still, easy to get)<br />
-Auto Class Changer for free<br />
-Auto Pickup<br />
-No Subclass Quest<br />
-GM SHOP<br />
-Limited Buff Slots - 24 + 12 Dances/Songs<br />
-Max Enchant Weapon 25<br />
-Max Enchant Armor/Jewelry 20<br />
-Safe Enchant 4<br />
-Enchant Success Normal Scrolls 60%<br />
-Enchant Success Blessed Scrolls 85%<br />
-PVP Armor/Weapon working<br />
-S80 Working<br />
-You need Noble quest<br />
-Global GK<br />
-All buffs up until 3rd class buffs at NPC Buffer<br />
-2h buffs<br />
-Pet buffer<br />
-Offline shop available<br />
+
+<strong>Miscellaneous</strong>
+<ul>
+   No auto-learning Skills<br />
+   Auto Class Changer for free<br />
+   Auto Pickup<br />
+   No Subclass Quest<br />
+   Nobless Quest required<br />
+   Nobless Quest ingredients exchangable<br />
+</ul>
+
 <br />
-Foundation - ON - <b>100% Chance</b><br />
-Elemental - ON<br />
+
+<strong>Custom NPCs</strong>
+<ul>
+   Limited GM Shop with misc items and low grade B and A<br />
+   Limited Global GK with all normal ports gathered in one NPC<br />
+</ul>
+
+<br />
+
+<strong>Custom Buffer</strong>
+<ul>
+   NPC Buffer with buffs up until Third Class<br />
+   Pet buffer<br />
+   Buff Schemes<br />
+   Auto-buffing when near the Buffer and are not buffed<br />
+   Limited Buff Slots - 24 + 12 Dances/Songs<br />
+   2h buffs excluding resistances<br />
+</ul>
+
+<br />
+
+<strong>Enchanting</strong>
+<ul>
+   Max Enchant Weapon 25<br />
+   Max Enchant Armor/Jewelry 20<br />
+   Safe Enchant 4<br />
+   Enchant Success Normal Scrolls 60%<br />
+   Enchant Success Blessed Scrolls 85%<br />
+</ul>
+
+<br />
+
+<strong>Common Features</strong>
+<ul>
+   Offline shop available<br />
+   PvP armors working<br />
+   MyTeleport working<br />
+   Elemental Weapon Enchant working<br />
+</ul>
+
+<br />
+
+<strong>Some of the Events</strong>
+<br />
+<table style="margin-left:35px;">
+   <tr><td width="100"></td><td></td><td></td></tr>
+   <tr><td>(Automated)</td><td> Team vs Team </td><td>(TvT)</td></tr>
+   <tr><td>(Automated)</td><td> Team vs Team vs Team </td><td>(TvTvT)</td></tr>
+   <tr><td>(Automated)</td><td> Deathmatch </td><td>(DM)</td></tr>
+   <tr><td>(Automated)</td><td> Last Man Standing </td><td>(LMS)</td></tr>
+   <tr><td>(Automated)</td><td> Team Deathmatch </td><td>(TDM)</td></tr>
+   <tr><td>(Automated)</td><td> Capture the Flag </td><td>(CtF)</td></tr>
+   <tr><td>(Automated)</td><td> Seek Out </td><td>(SO)</td></tr>
+   <tr><td>(Automated)</td><td> World Race </td><td>(WR)</td></tr>
+   <tr><td>(Automated)</td><td> King of the Hill </td><td>(KotH)</td></tr>
+   <tr><td>(Automated)</td><td> Area Dominance </td><td>(AD)</td></tr>
+   <tr><td>(Automated)</td><td> VIP Escort </td><td>(VE)</td></tr>
+   <tr><td>(Automated)</td><td> VIP Team Fight </td><td>(VTF)</td></tr>
+   <tr><td>(Automated)</td><td> Fortress Siege </td><td>(FS)</td></tr>
+   <tr><td>(Automated)</td><td> Castle Siege </td><td>(CS)</td></tr>
+   <tr><td>(Automated)</td><td> Town Siege </td><td>(TS)</td></tr>
+   <tr><td>(Automated)</td><td> Town Invasion </td><td>(TI)</td></tr>
+   <tr><td>(GM Event)</td><td> Ranked PvP </td><td>(PvP)</td></tr>
+   <tr><td>(GM Event)</td><td> Ranked TvT </td><td>(rTvT)</td></tr>
+   <tr><td>(GM Event)</td><td> Hide 'n' Seek </td><td>(HnS)</td></tr>
+   <tr><td>(GM Event)</td><td> Raid Boss Event </td><td>(RB)</td></tr>
+   <tr><td>(GM Event)</td><td> Quiz Event </td><td>(Quiz)</td></tr>
+   <tr><td>(GM Event)</td><td> Spy Event </td><td>(Spy)</td></tr>
+   <tr><td>(Persistent)</td><td> Chest of Fortune</td></tr>
+   <tr><td>(Persistent)</td><td> Clan War Severity</td></tr>
+   <tr><td>(Persistent)</td><td> Chaotic Weapon Mastery</td></tr>
+   <tr><td>(Persistent)</td><td> Most Wanted (PlayerKiller)</td></tr>
+</table>
 
 <br /><br />
 
 <strong>Server Machine</strong>
+<ul>
+   Hosted in Germany<br />
+   Intel Core i7-920 Quad-Core<br />
+   8 GB DDR3 RAM<br />
+</ul>
+EOT;
+
+echo isset($_REQUEST['ana'])? $ana : <<<EOT
+<h3>Server Info</h3>
+
+<strong>Rates</strong><br />
+<ul>
+   42x xp<br />
+   42x sp<br />
+   2x party<br />
+   14x Spoil<br />
+   100x Adena<br />
+   5x Quest drop rate<br />
+</ul>
 <br />
-Hosted in Germany<br />
-Intel® Core™ i7-920 Quad-Core<br />
-8 GB DDR3 RAM<br />
+
+<strong>Class Related</strong><br />
+<ul>
+   No Subclass Quest<br />
+   Subclass Max Level - 80<br />
+   Class Transfer for free<br />
+   Auto learn ALL skills<br />
+</ul>
+<br />
+
+<strong>Items and Farming</strong><br />
+<ul>
+   Custom Farm Areas<br />
+   GM Shop<br />
+   A+ Armors require Unsealing with Ancient Adena (Enchanting is preserved)<br />
+   Weapon Special Abilities Retial-like with Soul Stones (Enchanting is preserved)<br />
+</ul>
+<br />
+
+   <strong>Buffs and Convenience</strong><br />
+<ul>
+   Global Gatekeeper (Special for Nobless)<br />
+   MyTeleport Working (reward from events)<br />
+   NPC Buffer<br />
+   Premade Buff Schemes and ability to create custom ones<br />
+   Pet Buffer<br />
+</ul>
+<br />
+
+<strong>Enchanting</strong><br />
+<ul>
+   Safe Enchant - 4<br />
+   Max Enchant Weapon - 25<br />
+   Max Enchant Armor / Jewel - 20<br />
+   Enchant Rate - 60%<br />
+   Blessed Enchant Rate - 80%<br />
+   Blessed Scrolls are availavle from Spoil<br />
+</ul>
+<br />
+
+<strong>Miscellaneous</strong><br />
+<ul>
+   Some Raids are made stronger to be match the rewards<br />
+   A lot of accessories for custom appearance<br />
+   A lot of funny Auto events like TvT, CTF, DM<br />
+   Donations only for style (name colours, special accessory etc.) and more comfortable gameplay(nobless, clan items, all-in-one item)<br />
+</ul>
+<br />
 EOT;
 }
 
@@ -299,9 +470,7 @@ ob_end_clean();
    }
 
    body>div{
-      margin-top:   50px;
-      margin-left:  10%;
-      margin-right: 10%;
+      margin: 50px 10%;
       background-color: #161c20;
       padding: 5px;
       border-radius: 10px;
@@ -318,6 +487,8 @@ ob_end_clean();
    .content{
       border-radius: 10px;
       background-color: #1c303d;
+      background-image: url('images/Storm_Jewel_by_NitroX72.png');
+      /*background-attachment: fixed; */
       padding:  5px;
 
       width:    auto;
@@ -328,20 +499,20 @@ ob_end_clean();
    }
    .left>*{
       border-radius: 10px;
-      background-color: #161c20;
+      /*background-color: #161c20;*/
       background-image: url('images/BlockContent-c.png');
-      width:   200px;
+      width:   170px;
       margin:  20px;
       padding: 10px;
    }
    .main{
       margin:      20px;
-      margin-left: 270px;
+      margin-left: 240px;
 
-      border: 2px solid #FAEDDC;
+      border: 2px solid #808c96;
       border-radius: 10px;
 
-      background-color: #161c20;
+      /*background-color: #161c20;*/
       background-image: url('images/BlockContent-c.png');
 
       padding: 10px;
@@ -357,11 +528,22 @@ ob_end_clean();
       font-weight: bold;
       font-size: large;
    }
+
+   footer{
+      text-align:center;
+      font-size: xx-small;
+      color:gray;
+   }
+   footer a{
+      color:inherit;
+   }
+   footer a:hover{
+      text-decoration: underline;
+      opacity: 0.7;
+   }
    </style>
 </head>
 <body>
-<!-- No offence intended when copying the style of Eternal Aion's Site -->
-<!-- With best feelings we hope that everything is OK -->
 
 <div>
    <div class="header"><img src="<?php echo $header; ?>" /></div>
@@ -376,7 +558,7 @@ ob_end_clean();
                <li><a href="?connect">How to Connect</a></li>
                <li><a href="?info">Server Info</a></li>
                <li><a href="?rules">Server Rules</a></li>
-               <li><a href="/forum/" target="_BLANK">Forum</a></li>
+               <li><a href="forum/" target="_BLANK">Forum</a></li>
                <li><a href="?vote">Vote</a></li>
                <br />
                <!-- <li><a href="?register"><big>Register</big></a></li> -->
@@ -408,4 +590,8 @@ ob_end_clean();
 </div>
 
 </body>
+<footer>
+   Design by <a href="http://87.126.47.72:22080/">Andy 'Nightheart' Anchev</a><br />
+   Background image - "<a href="http://fav.me/d1b0tay">Storm Jewel</a>" by <a href="http://nitrox72.deviantart.com/">NitroX72</a>
+</footer>
 </html>
